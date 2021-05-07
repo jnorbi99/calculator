@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="700" prefWidth="400" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.secondControl">
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#tud" prefWidth="133.0" text="Tudományos" />
+                <Button mnemonicParsing="false" prefWidth="133.0" text="Informatikai" />
+                <Button mnemonicParsing="false" onAction="#atvalt" prefWidth="134.0" text="Átváltás" />
+            </children>
+        </HBox>
+        <Label fx:id="szamolas" prefHeight="120.0" prefWidth="400">
+            <VBox.margin>
+                <Insets top="30.0" />
+            </VBox.margin>
+            <font>
+                <Font size="40.0" />
+            </font></Label>
+        <Label fx:id="eredmeny" prefHeight="120.0" prefWidth="400">
+            <font>
+                <Font size="40.0" />
+            </font></Label>
+        <MenuButton mnemonicParsing="false" prefHeight="25.0" prefWidth="400.0" text="Opciók">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#binToDec" text="Bin -&gt; Dec" />
+                <MenuItem mnemonicParsing="false" onAction="#decToBin" text="Dec -&gt; Bin" />
+                <MenuItem mnemonicParsing="false" onAction="#oktToDec" text="Okt -&gt; Dec" />
+                <MenuItem mnemonicParsing="false" onAction="#decToOkt" text="Dec -&gt; Okt" />
+                <MenuItem mnemonicParsing="false" onAction="#hexToDec" text="Hex -&gt; Dec" />
+                <MenuItem mnemonicParsing="false" onAction="#decToHex" text="Dec -&gt; Hex" />
+            </items>
+            <VBox.margin>
+                <Insets top="20.0" />
+            </VBox.margin>
+        </MenuButton>
+        <GridPane alignment="CENTER" prefHeight="300.0" prefWidth="300.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+            <children>
+                <Button fx:id="button7" minHeight="10.0" minWidth="10.0" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="7" />
+                <Button fx:id="button8" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="8" GridPane.columnIndex="1" />
+                <Button fx:id="button4" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="4" GridPane.rowIndex="1" />
+                <Button fx:id="button5" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Button fx:id="button6" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Button fx:id="button9" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="9" GridPane.columnIndex="2" />
+                <Button fx:id="buttonF" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="F" GridPane.columnIndex="3" />
+                <Button fx:id="buttonAC" mnemonicParsing="false" onAction="#ac" prefHeight="40.0" prefWidth="40.0" text="AC" GridPane.columnIndex="4" />
+                <Button fx:id="buttonE" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="E" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <Button fx:id="buttonDel" mnemonicParsing="false" onAction="#del" prefHeight="40.0" prefWidth="40.0" text="DEL" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                <Button fx:id="button1" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="1" GridPane.rowIndex="2" />
+                <Button fx:id="button2" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Button fx:id="button3" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Button fx:id="buttonD" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="D" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <Button fx:id="buttonANS" mnemonicParsing="false" onAction="#ans" prefHeight="40.0" prefWidth="40.0" text="ANS" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                <Button fx:id="button0" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="0" GridPane.rowIndex="3" />
+                <Button fx:id="buttonA" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="A" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Button fx:id="buttonB" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="B" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <Button fx:id="buttonC" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="C" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                <Button fx:id="buttonEqual" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="=" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            </children>
+        </GridPane>
+    </children>
+</VBox>

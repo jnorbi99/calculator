@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="700" prefWidth="400" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.thirdControl">
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#tud" prefWidth="133.0" text="Tudományos" />
+                <Button mnemonicParsing="false" onAction="#info" prefWidth="133.0" text="Informatikai" />
+                <Button mnemonicParsing="false" prefWidth="134.0" text="Átváltás" />
+            </children>
+        </HBox>
+        <Label fx:id="szamolas" prefHeight="120.0" prefWidth="400.0">
+            <font>
+                <Font size="40.0" />
+            </font></Label>
+        <Label fx:id="eredmeny" prefHeight="120.0" prefWidth="400.0">
+            <font>
+                <Font size="40.0" />
+            </font></Label>
+        <GridPane alignment="CENTER" prefHeight="500.0" prefWidth="300.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <VBox.margin>
+                <Insets left="15.0" />
+            </VBox.margin>
+            <children>
+                <Button mnemonicParsing="false" onAction="#tToKg" prefHeight="40.0" prefWidth="70.0" text="T-&gt;kg" textAlignment="CENTER" />
+                <Button mnemonicParsing="false" onAction="#tToDkg" prefHeight="40.0" prefWidth="70.0" text="T-&gt;dkg" GridPane.columnIndex="1" />
+                <Button mnemonicParsing="false" onAction="#tToG" prefHeight="40.0" prefWidth="70.0" text="T-&gt;g" GridPane.columnIndex="2" />
+                <Button mnemonicParsing="false" onAction="#tToMg" prefHeight="40.0" prefWidth="70.0" text="T-&gt;mg" GridPane.columnIndex="3" />
+                <Button mnemonicParsing="false" onAction="#mgToT" prefHeight="40.0" prefWidth="70.0" text="mg-&gt;T" GridPane.columnIndex="4" />
+                <Button mnemonicParsing="false" onAction="#dkgToT" prefHeight="40.0" prefWidth="70.0" text="dkg-&gt;T" GridPane.rowIndex="2" />
+                <Button mnemonicParsing="false" onAction="#dkgToKg" prefHeight="40.0" prefWidth="70.0" text="dkg-&gt;kg" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Button mnemonicParsing="false" onAction="#dkgToG" prefHeight="40.0" prefWidth="70.0" text="dkg-&gt;g" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Button mnemonicParsing="false" onAction="#dkgToMg" prefHeight="40.0" prefWidth="70.0" text="dkg-&gt;mg" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <Button mnemonicParsing="false" onAction="#mgToDkg" prefHeight="40.0" prefWidth="70.0" text="mg-&gt;dkg" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                <Button mnemonicParsing="false" onAction="#gToT" prefHeight="40.0" prefWidth="70.0" text="g-&gt;T" GridPane.rowIndex="3" />
+                <Button fx:id="button7" minHeight="10.0" minWidth="10.0" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="7" GridPane.rowIndex="4" />
+                <Button mnemonicParsing="false" onAction="#gToKg" prefHeight="40.0" prefWidth="70.0" text="g-&gt;kg" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Button fx:id="button8" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Button fx:id="button4" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="4" GridPane.rowIndex="5" />
+                <Button fx:id="button5" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <Button fx:id="button6" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                <Button mnemonicParsing="false" onAction="#gToDkg" prefHeight="40.0" prefWidth="70.0" text="g-&gt;dkg" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <Button mnemonicParsing="false" onAction="#gToMg" prefHeight="40.0" prefWidth="70.0" text="g-&gt;mg" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                <Button mnemonicParsing="false" onAction="#mgToG" prefHeight="40.0" prefWidth="70.0" text="mg-&gt;g" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                <Button fx:id="button9" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                <Button fx:id="buttonDel" mnemonicParsing="false" onAction="#del" prefHeight="40.0" prefWidth="40.0" text="DEL" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                <Button fx:id="buttonAC" mnemonicParsing="false" onAction="#ac" prefHeight="40.0" prefWidth="40.0" text="AC" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                <Button mnemonicParsing="false" onAction="#HufToEur" prefHeight="40.0" prefWidth="70.0" text="HUF-EUR" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                <Button mnemonicParsing="false" onAction="#EurToHuf" prefHeight="40.0" prefWidth="70.0" text="EUR-HUF" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                <Button fx:id="button1" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="1" GridPane.rowIndex="6" />
+                <Button fx:id="button2" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <Button fx:id="button3" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                <Button mnemonicParsing="false" onAction="#cToF" prefHeight="40.0" prefWidth="70.0" text="°C-°F" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                <Button mnemonicParsing="false" onAction="#fToC" prefHeight="40.0" prefWidth="70.0" text="°F-°C" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                <Button fx:id="button0" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="0" GridPane.rowIndex="7" />
+                <Button fx:id="buttonDot" mnemonicParsing="false" onAction="#numbers" prefHeight="40.0" prefWidth="40.0" text="." GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <Button fx:id="buttonEXP" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="EXP" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                <Button fx:id="buttonANS" mnemonicParsing="false" onAction="#ans" prefHeight="40.0" prefWidth="40.0" text="ANS" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="=" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                <Button mnemonicParsing="false" onAction="#kgToT" prefHeight="40.0" prefWidth="70.0" text="kg-&gt;T" GridPane.rowIndex="1" />
+                <Button mnemonicParsing="false" onAction="#kgToDkg" prefHeight="40.0" prefWidth="70.0" text="kg-&gt;dkg" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Button mnemonicParsing="false" onAction="#kgToG" prefHeight="40.0" prefWidth="70.0" text="kg-&gt;g" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Button mnemonicParsing="false" onAction="#kgToMg" prefHeight="40.0" prefWidth="70.0" text="kg-&gt;mg" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <Button mnemonicParsing="false" onAction="#mgToKg" prefHeight="40.0" prefWidth="70.0" text="mg-&gt;kg" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            </children>
+        </GridPane>
+    </children>
+</VBox>
